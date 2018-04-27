@@ -55,32 +55,5 @@
     "grunt-css": "~0.5.4",
     "grunt-markdown": "~0.5.0",
     "grunt-angular-gettext": "^0.2.15"
-  },
-  "gitHead": "cc7857154f0c104598b90915cd6a7e69c7092ad9",
-  "_id": "insight-flash-ui@0.4.6",
-  "_npmVersion": "5.3.0",
-  "_nodeVersion": "8.5.0",
-  "_npmUser": {
-    "name": "wl",
-    "email": "wl@flashcoin.io"
-  },
-  "dist": {
-    "integrity": "sha512-F/t1yRkjQ+RwMbNdiMQOZerHVTq5o4W1bCRi2zKeWyUruthRyx2UMmaASe59e0Os/1o2o+OEYklxdnpbsl4coQ==",
-    "shasum": "49b81b7ee1a0ea7869f9504557c8b3b6db58f387",
-    "tarball": "https://registry.npmjs.org/insight-lite-ui/-/insight-lite-ui-0.4.6.tgz"
-  },
-  "maintainers": [
-    {
-      "name": "wl",
-      "email": "wl@flashcoin.io"
-    }
-  ],
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/insight-flash-ui-0.4.6.tgz_1506475811401_0.3762209110427648"
-  },
-  "directories": {},
-  "_shasum": "49b81b7ee1a0ea7869f9504557c8b3b6db58f387",
-  "_resolved": "https://registry.npmjs.org/insight-flash-ui/-/insight-flash-ui-0.4.6.tgz",
-  "_from": "insight-flash-ui@>=0.4.2 <0.5.0"
+  }
 }
