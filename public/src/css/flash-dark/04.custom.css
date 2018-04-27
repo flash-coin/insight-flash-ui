@@ -1,0 +1,144 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+
+/*Header background color*/
+
+.dark .fancy-title h1, .dark .fancy-title h2, .dark .fancy-title h3, .dark .fancy-title h4, .dark .fancy-title h5, .dark .fancy-title h6 {
+  background: transparent;
+}
+
+#wallet .col-lg-3 {
+  border-left: 1px solid white;
+}
+
+
+ul.icon-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333333;*/
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+ul.icon-social li {
+  float: left;
+}
+
+ul.icon-social li a {
+  display: block;
+  color: #E0AE27;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 4.5em;
+}
+
+ul.icon-social li a span {
+  display: block;
+  font-size: 0.2em;
+}
+
+ul.icon-social li a:hover {
+  color: #DA8B22;
+}
+
+footer ul.icon-social li a {
+  font-size: 1.5em;
+  padding: 8px;
+}
+
+#feature-flash a {
+  text-align: center;
+}
+
+#feature-flash a span {
+  margin-top: 20px;
+  display: block;
+}
+
+.dark .form-control:not(.not-dark)[readonly] {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dark .form-control:not(.not-dark) {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 991px) {
+  a.button {
+    white-space: normal;
+    height: auto !important;
+    text-align: center;
+  }
+  #about {
+    padding-top: 0 !important;
+  }
+  .vertical-middle {
+    padding-bottom: 0 !important;
+  }
+  .topmargin-lg {
+    margin-top: 0 !important;
+  }
+  .fancy-title {
+    margin: 20px 0;
+  }
+  .heading-block {
+    margin: 40px 0 0 0;
+  }
+  #slider .col-lg-5 {
+    padding-left: 0;
+  }
+  #news .col-sm-1 {
+    display: none;
+  }
+  /*#primary-menu-trigger {right:0 !important;left: auto !important;}
+    #header-wrap {display: none;}*/
+}
+
+@media (max-width: 414px) {
+  #wallet .col-lg-3 {
+    border-left: 0;
+    width: 180px;
+  }
+  .col-padding {
+    padding: 20px 60px;
+  }
+  #footer .footer-widgets-wrap {
+    padding: 20px 0;
+  }
+}
+
+.get-web-wallet-btn
+{
+  z-index: 299;
+  position: fixed;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  top: auto;
+  right: auto;
+  left: 0px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.get-web-wallet-btn a
+{
+  text-transform: unset;
+  letter-spacing: 0px;
+  font-size: 15px;
+}
+#gotoTop
+{
+  background-color: #E0AE27;
+}

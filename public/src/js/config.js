@@ -32,7 +32,7 @@ angular.module('insight').config(function($routeProvider) {
       title: 'Flashcoin Blocks solved '
     }).
     when('/address/:addrStr', {
-      templaterl: 'views/address.html',
+      templateUrl: 'views/address.html',
       title: 'Flashcoin Address '
     }).
     when('/topaddress', {
@@ -79,7 +79,6 @@ angular.module('insight')
 
     $rootScope.$on('$routeChangeSuccess', function() {
       ngProgress.complete();
-
       //Change page title, based on Route information
       $rootScope.titleDetail = '';
       $rootScope.title = $route.current.title;

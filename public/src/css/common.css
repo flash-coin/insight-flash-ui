@@ -6,7 +6,7 @@
 html,
 body {
   color: #373D42;
-  font-family: 'Ubuntu', sans-serif;
+  /*font-family: 'Ubuntu', sans-serif;*/
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* Header */
 .bg-header{
-  background: transparent url(../img/bg-header.png) no-repeat;
+  /*background: transparent url(../img/bg-header.png) no-repeat;*/
   background-size: 100% 100%;
 }
 /*-----------------------------------*/
@@ -121,13 +121,13 @@ margin-left: 0;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
 
 .navbar-default {
-  background-color: #1363C2;
+  background-color: #000;
   margin: 0;
   border: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #F4FBE8;
+  color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
   padding-left: 20px;
   padding-right: 20px;
@@ -139,7 +139,8 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #fff;
+  /*background-color: #fff;*/
+  color: #E0AE27;
 }
 
 .navbar-form .form-group {
@@ -163,12 +164,12 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #fffffe;
+  color: #E0AE27;
 }
 
 .navbar-default .navbar-brand {
   color: #FFFFFF;
-  padding: 20px 15px;
+  /*padding: 20px 15px;*/
 }
 
 .navbar-form .form-control {
@@ -207,14 +208,14 @@ margin-left: 0;
 #search { color: #fff; }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  color: #E0AE27;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  color: #E0AE27;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
@@ -394,7 +395,7 @@ margin-left: 0;
 }
 .progress-bar-info { background-color: #8DC429; }
 
-/* Set the fixed height of the footer here */
+/* Set the fixed height of the footer here 
 #footer {
   background-color: #373D42;
   color: #fff;
@@ -469,6 +470,7 @@ margin-left: 0;
   border-top: 1px solid #EAEAEA;
   padding: 15px 0 0 0;
 }
+*/
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -817,7 +819,7 @@ a.v_highlight_more {
     font-size: 20px;
   }
   .navbar-default .navbar-brand {
-    padding: 15px;
+    /*padding: 15px;*/
   }
   .insight {
     font-size: 26px;
@@ -882,3 +884,17 @@ a.v_highlight_more {
   }
 }
 
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 15px; 
+    padding:6px;
+  }
+}
+.navbar-brand {
+  float: left;
+  height: max-content;
+  /*padding: 15px 15px; */
+  font-size: 18px;
+  line-height: 20px;
+}
