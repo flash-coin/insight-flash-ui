@@ -8,7 +8,7 @@ function($scope, $rootScope, $routeParams, $location, Global, Transaction, Trans
 
   var pageNum = 0;
   var pagesTotal = 1;
-  var COIN = 100000000;
+  var COIN = 1e10;
 
   var _aggregateItems = function(items) {
     if (!items) return [];
