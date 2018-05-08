@@ -21,13 +21,13 @@ angular.module('insight.currency').controller('CurrencyController',
         if (this.symbol === $rootScope.defaultUSD) {
           response = _roundFloat((value * 0.01 * this.factor), 5);
         } else if (this.symbol === $rootScope.defaultMicroCoinUnit) {
-          this.factor = 10; // 10x for flashcoin.io - 1/1000x multiple 18Mar2017
+          this.factor = 1000; // 10x for flashcoin.io - 1/1000x multiple 18Mar2017
           response = _roundFloat((value * this.factor), 5);
         } else if (this.symbol === $rootScope.defaultBits) {
-          this.factor = 10000; // 10x for flashcoin.io - 1/1000x multiple 18Mar2017
+          this.factor = 1000000; // 10x for flashcoin.io - 1/1000x multiple 18Mar2017
           response = _roundFloat((value * this.factor), 2);
         } else {
-          this.factor = 0.01; // 10x for flashcoin.io- 1/1000x multiple 18Mar2017
+          this.factor = 1; // 10x for flashcoin.io- 1/1000x multiple 18Mar2017
           response = _roundFloat((value * this.factor), 2);
         }
         // prevent sci notation
@@ -55,11 +55,11 @@ angular.module('insight.currency').controller('CurrencyController',
             $rootScope.currency.factor = 1;
         });
       } else if (currency === $rootScope.defaultMicroCoinUnit) {
-        $rootScope.currency.factor = 10; // 10x for flashcoin.io- 1000x multiple 18Mar2017
+        $rootScope.currency.factor = 1000; // 10x for flashcoin.io- 1000x multiple 18Mar2017
       } else if (currency === $rootScope.defaultBits) {
-        $rootScope.currency.factor = 10000; // 10x for flashcoin.io- 1000x multiple 18Mar2017
+        $rootScope.currency.factor = 1000000; // 10x for flashcoin.io- 1000x multiple 18Mar2017
       } else {
-        $rootScope.currency.factor = 0.01; // 10x for flashcoin.io- 1000x multiple 18Mar2017
+        $rootScope.currency.factor = 1; // 10x for flashcoin.io- 1000x multiple 18Mar2017
       }
     };
 
