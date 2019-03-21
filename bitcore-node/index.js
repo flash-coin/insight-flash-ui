@@ -9,16 +9,16 @@ var InsightUI = function(options) {
   if (typeof options.apiPrefix !== 'undefined') {
     this.apiPrefix = options.apiPrefix;
   } else {
-    this.apiPrefix = 'api'; //'insight-lite-api'; WL fixed
+    this.apiPrefix = 'api'; //@ntr fixed
   }
   if (typeof options.routePrefix !== 'undefined') {
     this.routePrefix = options.routePrefix;
   } else {
-    this.routePrefix = ''; //'insight'; WL fixed
+    this.routePrefix = ''; //@ntr fixed
   }
 };
 
-InsightUI.dependencies = ['insight-flash-api'];
+InsightUI.dependencies = ['insight-api'];
 
 inherits(InsightUI, BaseService);
 

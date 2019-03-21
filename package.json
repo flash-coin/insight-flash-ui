@@ -1,10 +1,10 @@
 {
-  "name": "insight-flash-ui",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the litecoin network and build your own services with it.",
-  "version": "0.4.6",
+  "name": "insight-ui",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
+  "version": "0.3.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/flashcoin-project/insight-flash-ui.git"
+    "url": "git://github.com/bitpay/insight.git"
   },
   "contributors": [
     {
@@ -29,19 +29,19 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/bitpay/insight-ui/issues"
+    "url": "https://github.com/bitpay/insight/issues"
   },
-  "homepage": "https://github.com/flashcoin-project/insight-flash-ui",
+  "homepage": "https://github.com/bitpay/insight",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "flashcoin",
-    "flashcore",
+    "bitcoin",
+    "bitcore",
     "front-end"
   ],
-  "bitcoreNode": "flashcore-node",
+  "bitcoreNode": "bitcore-node",
   "dependencies": {},
   "devDependencies": {
     "bower": "~1.2.8",
@@ -55,5 +55,30 @@
     "grunt-css": "~0.5.4",
     "grunt-markdown": "~0.5.0",
     "grunt-angular-gettext": "^0.2.15"
-  }
+  },
+  "gitHead": "7c5a79c80a6e5e3f8d33dc84e6ccb61072029d94",
+  "_id": "insight-ui@0.3.0",
+  "scripts": {},
+  "_shasum": "84e625df73d419f9fc0a4e58af125d35a6ee3935",
+  "_from": "git+ssh://git@git.unseen.is:capitalbits/blockchain-ui.git#flashcoin.io-v0.3.0",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "braydonf",
+    "email": "braydon@bitpay.com"
+  },
+  "maintainers": [
+    {
+      "name": "braydonf",
+      "email": "braydon@bitpay.com"
+    }
+  ],
+  "dist": {
+    "shasum": "8f4976d44548917a73f7bec30fb038cb76f5f757",
+    "tarball": "http://registry.npmjs.org/insight-ui/-/insight-ui-0.3.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "git+ssh://git@git.unseen.is:capitalbits/blockchain-ui.git#c9acd6ec35145a8d94d53e996819fc099a51f803",
+  "readme": "# Insight UI\n\nA Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/bitpay/insight-api).\n\n## Getting Started\n\n```bash\nnpm install -g bitcore-node\nbitcore-node create mynode\ncd mynode\nbitcore-node add insight-api\nbitcore-node add insight-ui\nbitcore-node start\n```\n\nOpen a web browser to `http://localhost:3001/insight/`\n\n## Development\n\nTo run Insight UI locally in development mode:\n\nInstall bower dependencies:\n\n```\n$ bower install\n```\n\nTo compile and minify the web application's assets:\n\n```\n$ grunt compile\n```\n\nThere is a convenient Gruntfile.js for automation during editing the code\n\n```\n$ grunt\n```\n\n## Multilanguage support\n\nInsight UI uses [angular-gettext](http://angular-gettext.rocketeer.be) for multilanguage support.\n\nTo enable a text to be translated, add the ***translate*** directive to html tags. See more details [here](http://angular-gettext.rocketeer.be/dev-guide/annotate/). Then, run:\n\n```\ngrunt compile\n```\n\nThis action will create a template.pot file in ***po/*** folder. You can open it with some PO editor ([Poedit](http://poedit.net)). Read this [guide](http://angular-gettext.rocketeer.be/dev-guide/translate/) to learn how to edit/update/import PO files from a generated POT file. PO file will be generated inside po/ folder.\n\nIf you make new changes, simply run **grunt compile** again to generate a new .pot template and the angular javascript ***js/translations.js***. Then (if use Poedit), open .po file and choose ***update from POT File*** from **Catalog** menu.\n\nFinally changes your default language from ***public/src/js/config***\n\n```\ngettextCatalog.currentLanguage = 'es';\n```\n\nThis line will take a look at any *.po files inside ***po/*** folder, e.g.\n**po/es.po**, **po/nl.po**. After any change do not forget to run ***grunt\ncompile***.\n\n\n## Note\n\nFor more details about the [Insight API](https://github.com/bitpay/insight-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/bitpay/insight-api).\n\n## Contribute\n\nContributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/bitpay/insight).\n\n\n## License\n(The MIT License)\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+  "readmeFilename": "README.md"
 }

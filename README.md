@@ -1,22 +1,16 @@
 # Insight UI
 
-A Flashcoin blockchain explorer web application service for [Flashcore Node](https://github.com/flashcoin-project/flashcore-node) using the [Insight API](https://github.com/flashcoin-project/insight-flash-api).
-
-## Quick Start
-
-Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Flashcore](https://github.com/flashcoin-project/flashcore).
+A Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/bitpay/insight-api).
 
 ## Getting Started
 
-To manually install all of the necessary components, you can run these commands:
-
 ```bash
-npm install -g flashcore-node
-flashcore-node create mynode
+npm install -g bitcore-node
+bitcore-node create mynode
 cd mynode
-flashcore-node install insight-flash-api
-flashcore-node install insight-flash-ui
-flashcore-node start
+bitcore-node add insight-api
+bitcore-node add insight-ui
+bitcore-node start
 ```
 
 Open a web browser to `http://localhost:3001/insight/`
@@ -70,11 +64,11 @@ compile***.
 
 ## Note
 
-For more details about the [Insight API](https://github.com/flashcoin-project/insight-flash-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/flashcoin-project/insight-flash-api).
+For more details about the [Insight API](https://github.com/bitpay/insight-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/bitpay/insight-api).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/flashcoin-project/insight-flash-ui).
+Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/bitpay/insight).
 
 
 ## License
