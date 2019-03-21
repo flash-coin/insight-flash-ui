@@ -404,9 +404,6 @@ angular.module('insight.system').controller('HeaderController',
 
     $scope.menu = [
     {
-        'title': 'Charts',
-        'link': 'https://charts.flashcoin.io/'
-    }, {
       'title': 'Blocks',
       'link': 'blocks'
     },
